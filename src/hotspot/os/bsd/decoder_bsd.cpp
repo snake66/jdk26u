@@ -47,7 +47,7 @@ bool ElfDecoder::demangle(const char* symbol, char *buf, int buflen) {
 #endif
 
   // __cxa_demangle will return a pointer and a status of 0 regardless
-  // of whether we pas in a mangled name or not, but it will barf out
+  // of whether we pass in a mangled name or not, but it will barf out
   // a meaningless string if the symbol is not mangled. So we only pass
   // mangled names on to __cxa_demangle.
   auto symlen = strlen(symbol);
